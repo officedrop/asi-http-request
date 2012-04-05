@@ -235,7 +235,7 @@ static NSString *sharedSecretAccessKey = nil;
 	if (!key) {
 		return @"/";
 	}
-	NSString *path = [(NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)key, NULL, CFSTR(":?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)) autorelease];
+	NSString *path = [(NSString *)NSMakeCollectable(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)key, NULL, CFSTR(":?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding))) autorelease];
 	if (![[path substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"/"]) {
 		path = [@"/" stringByAppendingString:path];
 	}
