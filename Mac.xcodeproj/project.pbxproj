@@ -588,7 +588,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Mac" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -985,6 +985,7 @@
 				5751348C152DE2BE000DB09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B55B5EE40F7658C80064029C /* Build configuration list for PBXNativeTarget "Unit Tests (GHUnit)" */ = {
 			isa = XCConfigurationList;
